@@ -37,11 +37,17 @@ body {
     flex-direction: column;
     width: 90%;
     max-width: 375px;
-    margin: 32px auto;
+    margin: 6rem auto 2rem;
     border-radius: 20px;
     text-align: center;
     box-shadow: var(--box-shadow);
     background-color: white;
+}
+
+@media (max-width: 325px) {
+    .container {
+        margin: 1rem auto;
+    }
 }
 
 .content-wrapper {
