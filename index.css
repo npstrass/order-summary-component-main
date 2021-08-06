@@ -1,0 +1,114 @@
+:root {
+    --main-color-pale: hsl(225, 100%, 94%);
+    --main-color-bright: hsl(245, 75%, 52%);
+    --secondary-color-pale: hsl(225, 100%, 98%);
+    --secondary-color-desaturated: hsl(224, 23%, 55%);
+    --secondary-color-dark: hsl(223, 47%, 23%);
+    --box-shadow: 1px 5px 30px rgba(0,0,0,0.35);
+
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+@media (max-width: 325px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--main-color-pale);
+    background-image: url(/images/pattern-background-desktop.svg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 375px;
+    margin: 32px auto;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    background-color: white;
+}
+
+.content-wrapper {
+    padding: 1.75rem;
+}
+
+img {
+    border-radius: 20px 20px 0 0;
+}
+
+h1 {
+    color: var(--secondary-color-dark);
+    font-size: 1.25rem;
+    font-weight: 900;
+    margin-top: 0;
+}
+
+.description {
+    color: var(--secondary-color-desaturated);
+    font-size: 1rem;
+}
+
+.plan-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    padding: 1rem;
+    margin: 1.75rem auto;
+    text-align: left;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: var(--secondary-color-pale);
+}
+
+@media (max-width: 265px) {
+    .plan-wrapper {
+        height: 10em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.plan-wrapper img {
+    height: 3em;
+}
+
+.plan-wrapper p {
+    margin: 0;
+    color: var(--secondary-color-desaturated);
+}
+
+strong {
+    color: var(--secondary-color-dark);
+    font-weight: 700;
+}
+
+.btn {
+    color: var(--main-color-pale);
+    background-color: var(--main-color-bright);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    font-weight: 700;    
+}
+
+.cancel-order {
+    color: var(--secondary-color-desaturated);
+    font-weight: 700;
+}
