@@ -99,6 +99,17 @@ strong {
     font-weight: 700;
 }
 
+a {
+    font-weight: 700;
+    color: var(--main-color-bright);
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    opacity: .65;
+}
+
 .btn {
     color: var(--main-color-pale);
     background-color: var(--main-color-bright);
@@ -108,7 +119,17 @@ strong {
     font-weight: 700;    
 }
 
+.btn:hover {
+    cursor: pointer;
+    opacity: .65;
+}
+
 .cancel-order {
     color: var(--secondary-color-desaturated);
     font-weight: 700;
+}
+
+.cancel-order:hover {
+    cursor: pointer;
+    color: var(--secondary-color-dark);
 }
