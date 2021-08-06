@@ -24,7 +24,7 @@ html, body {
 
 body {
     background-color: var(--main-color-pale);
-    background-image: url(../images/pattern-background-desktop.svg);
+    background-image: url(images/pattern-background-desktop.svg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
